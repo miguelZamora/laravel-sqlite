@@ -13,4 +13,7 @@ protected $table = 'posts';
 
 protected $fillable = ['titulo','descripcion','url'];
 
+
+
 }
+ 

@@ -39,18 +39,15 @@
         <div class="container">
             <div class="content">
                 
-                @foreach($posts as $post)
-                <h2>
-                    <a 
-                        href="index/{{$post->id}}">{{ $post->titulo}}
-                    </a>
-                    </h2>
+
+               El ID : {{ $post->id}}<br />
+                <h2>    {{ $post->titulo}}  </h2>
                 <p>     Creado el :{{ $post->created_at}}
                 <br />
                         Modificado el :{{ $post->updated_at}}   
                 </p>
 
-                @endforeach
+
             </div>
         </div>
     </body>

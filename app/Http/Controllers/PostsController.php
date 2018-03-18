@@ -19,7 +19,17 @@ class PostsController extends Controller
 
     public function show($id)
     {
-    	return view('post');
+
+        
+       $post = Post::find($id);
+        
+        if (is_null($post))
+        {
+             abort(404);
+        }
+
+
+    	return view('show')->with(['post'=>$post]);
     }
 
 
