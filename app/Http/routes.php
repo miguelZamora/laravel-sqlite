@@ -16,5 +16,20 @@ Route::get('/', function () {
 });
 
 
+Route::get('/hola/{nombre}', function ($nombre) {
+    //return "Hola : " . $nombre;
+    return "Hola : {$nombre}";
+});
+
+
+
+Route::get('/login', 'LoginController@index');
+Route::post('/login', 'LoginController@store');
+
+//Route::post('/acceso', 'LoginController@acceso');
+
+
+
 Route::get('/index', 'PostsController@index');
 Route::get('/index/{id}', 'PostsController@show');
+
