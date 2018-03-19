@@ -26,7 +26,7 @@ Route::get('/hola/{nombre}', function ($nombre) {
 Route::get('/login', 'LoginController@index');
 Route::post('/login', 'LoginController@store');
 
-//Route::post('/acceso', 'LoginController@acceso');
+Route::post('/acceso', 'LoginController@store');
 
 
 

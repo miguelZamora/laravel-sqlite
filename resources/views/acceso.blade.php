@@ -30,13 +30,47 @@
       <script src="../../assets/html5shiv.min.js"></script>
       <script src="../../assets/respond.min.js"></script>
     <![endif]-->
+
+
+
+    <!-- parte con angular js -->
+    <script src="../../assets/js/angular.min.1.6.4.js"></script>
+    
+
+
+    <script src="../../assets/angularjs/script.js"></script>
+    <script src="../../assets/angularjs/controllers/accesoControllers.js">
+    <script src="../../assets/angularjs/route/route.js"></script>
+    </script>
+    
+
+
   </head>
   <body>
     <div class="container">
       acceso a la aplicacion Bienvenido Usuario : {{ $usuario }}
       ID : {{ $id }}
-    </div> <!-- /container -->
+    </div> 
+    
+   
+  <div class="container">
+    <h3>angular js</h3>
+    <div ng-app="myApp" ng-controller="accesoCtrl">
+      @{{ firstName + " " + lastName }}
+    </div>
+  </div>  
+
+
+
+    <!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+
+
+
   </body>
 </html>

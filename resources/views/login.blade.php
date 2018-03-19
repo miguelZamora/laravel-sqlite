@@ -33,7 +33,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="form-signin"    action="/login" method="post">
+      <form class="form-signin"    action="/acceso" method="post">
         <input name="_token" type="hidden" value="{{ csrf_token() }}" >
         <h2 class="form-signin-heading">login Aplicativo</h2>
         <label for="inputEmail" class="sr-only">usuario</label>

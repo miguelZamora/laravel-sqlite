@@ -63,5 +63,37 @@ php artisan tinker
 
  
 
+Se construye un login simple no el por defecto
+
+una tabla login con id usuario y pass
+
+un modelo con la tabla 
+
+un LoginController
+y rutas 
+
+localhost:8000/login  method get 
+localhost:8000/login  method post
+
+resultado OK del la consulta de usuario y contraseña
+
+se redirecciona a  el path o url http://localhost:8000/acceso
+
+/acceso  
+
+Si no hay resultados en la consulta a DB te deja en index
+
+
+
+bueno ahora se le agrego angularjs aun no se para que quiero esto pero logre probar que se puede hacer sin mayores problemas 
+
+como los tag en el la pagina de acceso  generan errores entre blade y angular 
+ "{{ $variable_blade }}" y {{ variable_angularjs }}
+
+ la solucion es un "@" en inicio de un tag angularjs 
+
+
+ ya luego se ira desarroollando algo mas entretenido por ahora es posible hacerlo y sin mucho desgaste.
+
 
 
