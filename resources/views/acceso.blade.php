@@ -13,7 +13,7 @@
     <title>Acceso</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.3.3.7.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -39,26 +39,58 @@
 
 
     <script src="../../assets/angularjs/script.js"></script>
-    <script src="../../assets/angularjs/controllers/accesoControllers.js">
+    <script src="../../assets/angularjs/controllers/accesoControllers.js"></script>
     <script src="../../assets/angularjs/route/route.js"></script>
-    </script>
-    
 
+    
+    <!-- grafico js  -->
+    <script src="../../assets/chartgoogle/loader.js"></script>
+    <script src="../../assets/js-graficos/graficos.js"></script>
+    <!-- end graficos  -->
 
   </head>
   <body>
     <div class="container">
-      acceso a la aplicacion Bienvenido Usuario : {{ $usuario }}
-      ID : {{ $id }}
-    </div> 
+      <!-- MENU  -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b>Miguel Angel Zamora Montecinos</b></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/">Indice</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Tecnologias</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="/login">login</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- fin menu  -->
+      <!-- CONTENIDO  -->
+        acceso a la aplicacion Bienvenido Usuario : {{ $usuario }}
+        ID : {{ $id }}
     
-   
-  <div class="container">
-    <h3>angular js</h3>
-    <div ng-app="myApp" ng-controller="accesoCtrl">
-      @{{ firstName + " " + lastName }}
-    </div>
-  </div>  
+        <h3>angular js</h3>
+        <div ng-app="myApp" ng-controller="accesoCtrl">
+          @{{ firstName + " " + lastName }}
+        </div>
+      </div>  
+
+      <!-- FIN CONTENIDO  -->
+
+
+      <!-- render del grafico -->  
+
+      <div class="container"  align="center">
+          <div class="col-md-4" id="chart_div" ></div>
+          <div class="col-md-4"  > objeto 2 </div>
+          <div class="col-md-4"  >objeto 3 </div>
+      </div>
+      <!-- en render grafico-->
+
+
+
 
 
 

@@ -55,16 +55,19 @@ class LoginController extends Controller
        $id = '';
 
        foreach($results as $result){
-            $id = $result->id;
+            $id         = $result->id;
+            $usuario    = $result->usuario;
         }
+        
         if (is_null($id) || $id == '')
         {
              return redirect('/');    
         }
         else
         {
-            return view('acceso')->with(['id'=>$id ,'usuario'=>$user ]);    
+            return view('acceso')->with(['id'=>$id ,'usuario'=>$usuario ]);    
         }    
+
     }
 
     /**
